@@ -1,0 +1,39 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react-hooks/recommended",
+        "plugin:react/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "google",
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "prettier"
+    ],
+    "ignorePatterns": ["babel.config.js"],
+    "rules": {
+        "semi": ["error", "never"],
+        "quotes": ["error", "single"],
+        "require-jsdoc": "off",
+        "react/prop-types": 0,
+        "react-hooks/exhaustive-deps": "off",
+        "import/no-unresolved": "off",
+        "import/namespace": "off",
+        "react/no-unescaped-entities": "off",
+        "import/no-default-export": "warn",
+        "import/newline-after-import": ["error", { "count": 1 }],
+        "import/order": ["error", {"groups": ["type","object","builtin", "external","internal","parent","sibling","index"]}]
+    }
+}
